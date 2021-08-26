@@ -41,14 +41,14 @@ createContactForm() {
 onSubmit(form, formDirective: FormGroupDirective) {
   this.loading = true;
   this.api.send_to_slack(form.value).subscribe((response: any) => {
-    this.isEmailSent = 'Message received!,Nkaka will get back to you soon';
+    this.isEmailSent = 'Message received!,I will get back to you soon';
     this.loading = false;
     this.contactFormGroup.reset();
     formDirective.resetForm();
   }, error => {
     this.loading = false;
     if (error.status == 200) {
-      this.isEmailSent = 'Message received!,Nkaka will get back to you soon';
+      this.isEmailSent = 'Message received!,I will get back to you soon';
       this.contactFormGroup.reset();
       formDirective.resetForm();
     } else {
