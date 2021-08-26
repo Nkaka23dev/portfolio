@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import{MatListModule} from '@angular/material/list'
 import'hammerjs';
+import { HammerModule} from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import{FlexLayoutModule} from '@angular/flex-layout';
 import { BioComponent } from './components/bio/bio.component';
@@ -28,6 +29,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     BrowserModule,AppRoutingModule,BrowserAnimationsModule,
     FormsModule, 
     FormsModule,MatListModule,
+    HammerModule,
    
   ],
   providers: [], 
