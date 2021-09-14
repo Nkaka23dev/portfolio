@@ -28,6 +28,9 @@ export class ApiService {
         }
       ]
     };
-    return this.http.post(this.web_hook, JSON.stringify(message), this.httpOptions);
+    return this.http.post(this.web_hook, JSON.stringify(message), this.httpOptions); 
+
+
+    // this is an api post
   }
 }
