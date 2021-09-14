@@ -12,7 +12,7 @@ export class ApiService {
       {
         'Content-Type': 'application/x-www-form-urlencoded'
        })
-  };
+  }; 
 
   constructor(private http: HttpClient) { }
 
