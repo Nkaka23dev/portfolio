@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ApiService {
 
-  web_hook = 'https://hooks.slack.com/services/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';
+  web_hook = 'https://hooks.slack.com/services/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';
   httpOptions = {
     headers: new HttpHeaders(
       {
